@@ -23,8 +23,6 @@
     <canvas id="myCanvas" width="480" height="320"></canvas>
 
     <script>
-        let canvas = document.getElementById("myCanvas");
-        let ctx = canvas.getContext("2d");
         let ballRadius = 10;
         let x = canvas.width / 2;
         let y = canvas.height - 30;
@@ -51,9 +49,10 @@
         if (x + dx > canvas.width || x + dx < 0) {
             dx = -dx;
         }
-        let paddleHeight = 10;
-        let paddleWidth = 75;
+        let paddleHeight = 15;
+        let paddleWidth = 65;
         let paddleX = (canvas.width - paddleWidth) / 2;
+
 
     </script>
 
