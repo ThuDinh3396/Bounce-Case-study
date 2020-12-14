@@ -9,5 +9,19 @@ function Line(x, y, ctx) {
         this.ctx.lineTo(this.x + 150, this.y);
         this.ctx.lineWidth = 5
         this.ctx.stroke();
+    } 
+    this.handleEvent = function (evt) {
+        switch (evt.keyCode) {
+            case 37:
+                if (this.x - 10 >= 0){
+                    this.x -= 10;
+                }
+                break;
+            case 39:
+                if (this.x + 150 + 10 <= 800){
+                    this.x += 10;
+                }
+                break;
+        }
     }
 }
